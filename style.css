@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+@font-face {
+  font-family: Phage;
+  src: url("assets/Phage\ Rough.otf") format("opentype");
+}
 
 body {
-  background: url("./backG.png");
+  background: url("./assets/backG2.png");
   background-repeat: no-repeat;
-  background-color: black;
+  background-color: #1C1D3C;
   display: flex;
-  padding-left: 8%;
-  padding-right: 8%;
   flex-direction: column;
   height: 200vh;
 }
@@ -26,20 +33,46 @@ body {
 }
 
 .nav-items {
-  width: 84%;
+  width: 100%;
   position: fixed;
   display: flex;
-  font-family: 'Carrois Gothic';
-  color: rgb(255, 217, 0);
+  font-family: Phage;
+  padding-top: 1%;
+  padding-bottom: 1%;
   justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
   align-items: center;
   z-index: 999;
-  padding-top: 2%;
+  transition: all 0.5s ease 0s;
 }
 
-.logo{
-  width: 8em;
+.navCol {
+  background-color: #1C1D3C;
 }
+
+.smeLogo{
+  width: 4em;
+}
+
+.nl1{
+  display: flex;
+  gap: 5%;
+  font-family: 'Carrois Gothic';
+  font-size: medium;
+  color: rgb(255, 217, 0);
+}
+
+.nl2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nl2 small{
+  font-size:xx-small;
+}
+
 .main{
   color:rgb(255, 217, 0);
 }
@@ -47,7 +80,7 @@ body {
 .nav-tabs {
   cursor: pointer;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 :root {
@@ -129,19 +162,25 @@ body {
 
 .bodyhead{
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
+gap: 2%;
+margin-top: 6%;
 width: 100%;
 height: 45%;
 }
 
+.mainLogo{
+  width: 12rem;
+}
+
 .bodyBlock1{
-  cursor: pointer;
-  margin-top: 70px;
+  cursor:auto;
   display: flex;
   width: 70%;
   text-transform: uppercase;
-  font-family: 'Carrois Gothic';
+  font-family: Phage;
   background-size: cover;
   color: rgb(255, 217, 0);
   justify-content: center;
@@ -150,34 +189,18 @@ height: 45%;
 
 .bHead{ 
   letter-spacing: 2PX;
-  font-weight: bolder;
   border-radius: 10px;
-  background-color:rgba(0, 0, 0, 0.521);
+  background-color:rgba(0, 1, 46, 0.521);
   backdrop-filter: blur(2px);
   display: flex;
+  padding: 2%;
+  gap: 12%;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 60em;
-  height: 15rem;
+  height: 11em;
   text-align: center;
-  font-size: 8vh;
+  font-size: 6vh;
 }
 
-.hText{
-  display: grid;
-  font-size: xx-large;
-}
-
-.hButton{
-  padding: 10px;
-  border-radius: 10px;
-  background:linear-gradient(90deg,rgb(3, 96, 158),rgb(2, 196, 196));
-  color: white;
-  font-size: 4vh;
-  font-weight: bold;
-  border: none;
-}
-.hButton:active{
-  transition: all 0.5s ease 0s;
-  opacity: 0.4;
-}

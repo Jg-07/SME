@@ -3,8 +3,8 @@ import Typed from 'typed.js'
 
 var typed = new Typed('.typed', {
     strings: [
-        "We Ascend",
-        "We Conquer",
+        "We Ascend !!",
+        "We Conquer !!",
         "Welcome to the hub of royal mechons",
         "The Society of Mechanical engineering,CEG"],
     typeSpeed: 60,
@@ -12,3 +12,14 @@ var typed = new Typed('.typed', {
     backDelay: 3300,
     loop: true,
 });
+
+let navbar = document.querySelector('.nav-items');
+
+window.onscroll = function () {
+    if (window.scrollY == 0) {
+        navbar.classList.remove('navCol');
+    }
+    else {
+        navbar.classList.add('navCol');
+    }
+}
