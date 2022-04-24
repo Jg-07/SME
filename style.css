@@ -20,25 +20,10 @@ html{
 }
 
 @font-face {
-<<<<<<< HEAD
     font-family: NoteThis;
     src: url("assets/Note_this.ttf") format("truetype");
   }
   
-=======
-  font-family: NoteThis;
-  src: url("assets/Note_this.ttf") format("truetype");
-}
-
-body {
-  background: url("./assets/backG2.png");
-  background-repeat: no-repeat;
-  background-color: #1C1D3C;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
->>>>>>> 5b9172d719652976a4739fce6167e1c966efe4bd
 
 ::-webkit-scrollbar{
     width: 10px;
@@ -62,7 +47,6 @@ body{
     background-color: #1C1D3C;
     background-repeat: no-repeat;   
 }
-<<<<<<< HEAD
 footer{
     background-color: rgb(35, 35, 36);
     color: white;
@@ -101,17 +85,6 @@ footer{
     margin-left: 25px;
     margin-right: 25px;
     font-size: 1.1rem;
-=======
-
-.nl1{
-  display: flex;
-  gap: 5%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-family: 'Carrois Gothic';
-  font-size: medium;
-  color: rgb(255, 217, 0);
->>>>>>> 5b9172d719652976a4739fce6167e1c966efe4bd
 }
 
 .nl2{
@@ -214,24 +187,10 @@ footer{
     background-color: rgb(19, 209, 130);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-<<<<<<< HEAD
 .h1{
     text-align: center;
     font-weight: bolder;
     font-size: x-large;
-=======
-
-.bodyhead{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 2%;
-margin-top: 10%;
-margin-bottom: 10%;
-width: 100%;
-height: 45%;
->>>>>>> 5b9172d719652976a4739fce6167e1c966efe4bd
 }
 .temp .img{
     width: 135px;
@@ -408,7 +367,6 @@ height: 45%;
     }
 }
 
-<<<<<<< HEAD
 @media (max-width:900px){
     .frame{
         flex-direction: column;
@@ -535,158 +493,3 @@ height: 45%;
         opacity: 1;
     }
 }
-=======
-.about{
-  text-transform: uppercase;
-  font-family: Phage;
-  color: rgb(255, 217, 0);
-  padding: 1rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  background-color: #181936;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 9px 9px 17px 0px rgba(255,217,0,0.75);
-}
-
-.about p{
-  font-family: NoteThis;
-  text-transform: none;
-  padding: 2rem;
-  font-size: larger;
-}
-
-.a1{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5%;
-  justify-content: space-around;
-}
-
-.head{
-  text-align: center;
-  font-family: Phage;
-  color: rgb(255, 217, 0);
-  margin-top: 6rem;
-  font-size: 3rem;
-}
-
-.head2{
-  font-size: 2rem;
-}
-
-.events{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navHub{
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  background-color: #181936;
-  width: 100%;
-  align-items: center;
-  margin-top: 5rem;
-  padding-top: 2rem;
-  position: fixed;
-  z-index: 1;
-  font-family: Phage;
-  padding-bottom: 2rem;
-}
-
-.navHub a{
-  color: rgb(255, 217, 0);
-  text-decoration: none;
-  font-size: 2rem;
-}
-
-label{
-  display:flex;
-  flex-direction:column;
-  width: 70px;
-  cursor:pointer;
-  transform: scale(0.6);
- }
- 
- label span{
-   background: rgb(255, 217, 0);
-   border-radius:10px;
-   height:7px;
-   margin: 7px 0;
-   transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
- }
-
- span:nth-of-type(1){
-   width:50%;
- }
- 
- span:nth-of-type(2){
-   width:100%;
- }
- 
- 
- span:nth-of-type(3){
-   width:75%;
- }
- 
- 
- input[type="checkbox"]{
-   display:none;
- }
- 
- 
- input[type="checkbox"]:checked ~ span:nth-of-type(1){
-   transform-origin:bottom;
-   transform:rotatez(45deg) translate(8px,0px)
- }
- 
- 
- input[type="checkbox"]:checked ~ span:nth-of-type(2){
-   
-   transform-origin:top;
-   transform:rotatez(-45deg)
- }
- 
- 
- input[type="checkbox"]:checked ~ span:nth-of-type(3){
-   
-   transform-origin:bottom;
-   width:50%;
-   transform: translate(30px,-11px) rotatez(45deg);
- 
- }
- 
- .hidden{
-  display: none;
-}
-.appear{
-  animation-name: app;
-  animation-duration: 0.5s;
-  opacity: 1;
-}
-
-@keyframes openNav { 
-  0%{
-      transform: rotateX(-90deg);
-  }
-  75%{
-      transform: rotateX(-10deg);
-  }
-  100%{
-      transform: rotateX(0deg);
-  }
-}
-
-.openTog{
-  animation-name: openNav;
- animation-duration: 0.6s;
-}
-
->>>>>>> 5b9172d719652976a4739fce6167e1c966efe4bd

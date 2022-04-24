@@ -1,6 +1,5 @@
 import Typed from 'typed.js'
 
-<<<<<<< HEAD
 let navbar = document.querySelector('.navbar');
 let navBrand = document.querySelector('.navBrand');
 let togDisp = document.querySelector('.togContents');
@@ -9,10 +8,6 @@ let navTog = document.querySelector('.navTog');
 let pro = document.querySelector('#product');
 let fea = document.querySelector('#feature');
 let work = document.querySelector('#working');
-=======
-let navh = document.querySelector('.navHub');
-let hum = document.querySelector('.humb');
->>>>>>> 5b9172d719652976a4739fce6167e1c966efe4bd
 
 var typed = new Typed('.typed', {
     strings: [
