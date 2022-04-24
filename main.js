@@ -1,6 +1,9 @@
 import './style.css'
 import Typed from 'typed.js'
 
+let navh = document.querySelector('.navHub');
+let hum = document.querySelector('.humb');
+
 var typed = new Typed('.typed', {
     strings: [
         "We Ascend !!",
@@ -23,3 +26,18 @@ window.onscroll = function () {
         navbar.classList.add('navCol');
     }
 }
+
+let c = 0;
+
+hum.addEventListener('click', function () {
+    if (c == 0) {
+        navh.classList.add('openTog');
+        navh.classList.remove('hidden');
+        c++;
+    }
+    else {
+        navh.classList.remove('openTog');
+        navh.classList.add('hidden');
+    }
+})
+
