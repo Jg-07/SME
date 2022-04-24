@@ -30,17 +30,21 @@ window.onscroll = function () {
     }
 }
 
-let c = 0;
-
-hum.addEventListener('click', function () {
-    if (c == 0) {
-        navh.classList.add('openTog');
-        navh.classList.remove('hidden');
-        c++;
-    }
-    else {
-        navh.classList.remove('openTog');
-        navh.classList.add('hidden');
-    }
+navTog.addEventListener('click', function () {
+    togDisp.classList.remove('closeTog');
+    togDisp.classList.add('openTog');
+    navTog.classList.add('hidden');
+    navCancel.classList.add('appear');
+    navCancel.classList.remove('hidden');
+    togDisp.classList.remove('hidden');
 })
+navCancel.addEventListener('click', function () {
+    togDisp.classList.remove('openTog');
+    togDisp.classList.add('closeTog');
+    navTog.classList.add('appear');
+    navTog.classList.remove('hidden');
+    navCancel.classList.add('hidden');
+    togDisp.classList.add('hidden');
+})
+
 

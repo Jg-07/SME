@@ -351,15 +351,6 @@ footer{
  width: 500px;
  height: 280px;
 }
-/*embed{
-    opacity: 0;
-    pointer-events: 0;
-    width: 0;
-    height: 0;
-}
-#trum:checked ~ embed{
-   display: block;
-}*/
 
 @media (min-width:800px){
     .navCancel{
