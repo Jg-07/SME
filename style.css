@@ -160,7 +160,7 @@ footer{
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 9rem;
+    margin-top: 6rem;
 }
 .fHead{
     display: grid;
@@ -170,58 +170,38 @@ footer{
     font-size: 3rem;
 }
 .fHead::after{
-    content: 'Origano provides you with remarkable features and Also best delivery servies';
-    font-size: small;
+    content: 'Annually conducted fests of SME on every odd and even semester';
+    font-size: 1.2rem;
+    font-family: NoteThis;
     padding: 20px;
-    color:rgb(112, 112, 112);
+    color:rgb(149, 149, 149);
 }
 .temp{
     width: 100%;
     display: flex;
     align-items: center;
-    grid-gap: 30px;
     flex-direction: column;
     border-radius: 10px;
     padding: 30px;
-    color: black;
-    background-color: rgb(19, 209, 130);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(255, 217, 0);
+    background-color: #181936;
+    box-shadow: 9px 9px 17px 0px rgba(255,217,0,0.75);
 }
-.h1{
+.temp .h1{
     text-align: center;
-    font-weight: bolder;
-    font-size: x-large;
+    font-family: Phage;
+    font-size: 2rem;
 }
 .temp .img{
-    width: 135px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0,0.1);
-    border-radius: 10px;
-    height: 105px;
+    width: 15em;
 }
-.temp .img1{
-    width: 155px;
-    padding: 10px;
-    height: 105px;
-}
+
 .ftext{
-    font-family: 'KoHo';
-    background-color: rgb(19, 209, 130);
-    font-size: medium;
+    font-family: NoteThis;
+    font-size: 1.1rem;
     text-align: justify;
 }
-.head{
-    display: grid;
-    text-align: center;
-    padding: 10px;
-    font-size: 40px;
-    font-weight: bold;
-}
-.head::after{
-    content: "Our Products are Long-lasting, Artistic and also used and recommended by many professionals";
-    font-size: small;
-    color: white;
-    padding: 20px;
-}
+
 .proImg{
     margin: 30px;
     width: 100vh;
@@ -245,6 +225,11 @@ footer{
     text-align: center;
     font-size: 6vh;
 }
+
+.typing{
+    width: 80%;
+}
+
 .feats{
     width: 100%;
     display: flex;
@@ -297,6 +282,7 @@ footer{
     color: rgb(255, 217, 0);
     cursor: pointer;
     text-align: center;
+    transition: 0.2s ease-in 0s;
     border-radius: 5px;
     width: auto;
 }
@@ -308,35 +294,118 @@ footer{
     background-color: #181936;
   }
 .bodyBlock4{
-  margin-top: 70px;
   display: flex;
   align-items: center;
+  gap: 2rem;
+  margin-top: 9rem;
   flex-direction: column;
-  grid-gap:30px;
 }
 .wHead{
     display: grid;
     text-align: center;
-    color: rgb(19, 209, 130);
-    font-size: 40px;
-    font-weight: bold;
+    color: rgb(255, 217, 0);
+    font-family: Phage;
+    font-size: 3rem;
 }
 .wHead::after{
-    content: "Are you a beginer ? If so get to know how to play trumbone thought by one of the expert";
-    font-size: small;
+    content: "Know about the team of brighter minds came together to make this possible";
+    font-size: 1.2rem;
+    font-family: NoteThis;
     padding: 20px;
-    color:rgb(112, 112, 112);
+    color:rgb(149, 149, 149);
 }
 .frame{
   margin: 160px;
   margin-top: 0px;
   padding: 20px;
   grid-gap:10px;
-  background-color: rgb(19, 209, 130);
+  width: 80%;
+  background-color: #181936;
   display: flex;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  box-shadow: 9px 9px 17px 0px rgba(255,217,0,0.75);
 }
+
+.link{
+    border-radius: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+  
+  .content {
+    position: relative;
+    width: 100%;
+    font-family: Phage;
+    color: rgb(255, 217, 0);
+    font-size: 3rem;
+    margin: auto;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .content .content-overlay {
+    background-color:rgba(0, 1, 46, 0.521);
+    border-radius: 1rem;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 98%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+  
+  .content-image{
+    width: 100%;
+  }
+  
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .content-details h3{
+    font-weight: normal;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+
+  .fadeIn-left{
+    left: 20%;
+  }
+
+
+
 .text1{
   font-size: 2.7vh;
   font-family: 'KoHo';

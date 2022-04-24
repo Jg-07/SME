@@ -47,4 +47,13 @@ navCancel.addEventListener('click', function () {
     togDisp.classList.add('hidden');
 })
 
+window.addEventListener('click', function (event) {
+    let box = document.querySelector('.togContents');
+    if (event.target != box && event.target != navCancel && event.target != navTog && event.target != togDisp) {
+        navTog.classList.remove('hidden');
+        navCancel.classList.add('hidden');
+        togDisp.classList.add('hidden');
+    }
+})
+
 
