@@ -2,40 +2,168 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SME-CEG</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SME</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="nav-items">
-    <div class="nl1">
-      <img src="./assets/smeLogo.png" class="smeLogo" alt="">
+  <nav class="navbar">
+    <div class="navBrand">
+      <img src="assets/smeLogo.png" style="width: 4rem;">
       <div class="nl2">
         <div>SME-CEG</div>
         <small>Society of mechanical engineering</small>
       </div>
     </div>
-    <div class="nav-tabs">
-      <a href="#" class="neon-button">HOME</a>
-      <a href="#" class="neon-button">EVENTS</a>
-      <a href="#" class="neon-button">TEAM</a>
-      <a href="#" class="neon-button">GALLARY</a>
-      <a href="#" class="neon-button">CONTACTS</a>
+    <img src="assets/navOpen.png" class="navTog">
+    <img src="assets/navClose.png" class="navCancel hidden">
+    <div class="navContents">
+      <a class="navItem" href="#about">ABOUT</a>
+      <a class="navItem" href="#symp">Symposiums</a>
+      <a class="navItem" href="#about">TEAM</a>
+      <a class="navItem" href="#about">GALLERY</a>
+      <a class="navItem" href="#about">CONTACTS</a>
+    </div>
+  </nav>
+  <div class="togContents hidden">
+    <a class="togItem" href="#about">ABOUT</a>
+    <a class="togItem" href="#symp">Symposiums</a>
+    <a class="togItem" href="#about">TEAM</a>
+    <a class="togItem" href="#about">GALLERY</a>
+    <a class="togItem" href="#about">CONTACTS</a>
+  </div>
+  <div class="bodyBlock1">
+    <div class="bHead">
+      <img src="./assets/smeLogo.png" class="mainLogo" alt="">
+      <div class="typing"><span class="typed"></span></div>
     </div>
   </div>
-  <div class="bodyhead">
-    <div class="bodyBlock1">
-      <div class="bHead">
-        <img src="./assets/smeLogo.png" class="mainLogo" alt="" style="height: 100%;">
-        <h4 style="height: 100%;"><span class="typed"></span></h4>
+
+  <div class="body">
+    <div id="about"></div>
+    <div class="bodyBlock2">
+      <h1>Who are We ??</h1>
+      <img src="/assets/smeLogo.png" alt="">
+      <p style="font-size: larger;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi rerum maiores tempore quia possimus sapiente
+        autem
+        officiis, consequatur sunt? Impedit hic officiis id numquam quisquam earum excepturi, voluptas iusto officia?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum sit, dolores accusamus at nemo maxime
+        molestiae
+        similique sed iste, accusantium quos quod saepe pariatur ex error reprehenderit perspiciatis dolor non.
+      </p>
+    </div>
+
+    <div id="symp"></div>
+    <div class="bodyBlock3">
+      <div class="fHead">Symposiums</div>
+      <div class="feats">
+        <div class="temp">
+          <div class="h1">Pinnacle</div>
+          <div><img src="/assets/Logo1.png" class="img"></div>
+          <div class="ftext">
+            The trombone Slide is the most important part of the trombone. The quality of the Slide directly
+            determines whether the whole trombone is used smoothly. Poor quality Slides are easy to deform
+            and oxidize, and are easy to get stuck in the process of practice.
+            <br><br>
+            Origano inner Slide adopts brass chrome plating process, with higher hardness, higher
+            brightness, more wear resistance and also, faster reaction speed when playing.
+          </div>
+        </div>
+        <div class="temp">
+          <div class="h1">Asension</div>
+          <div><img src="/assets/Logo1.png" class="img"></div>
+          <div class="ftext">
+            a) Along with Origano Trumbones you can also by the fine cleaning tool kit with additional
+            discounts.
+            <br><br>
+            Long brushes can clean stains in U-shaped tubes. The short brush can clean the stains in the
+            mouthpiece and short pipe. Oil can lubricate the slices (professional slide oil is recommended
+            for higher maintenance). Joint grease plays a role in lubricating and sealing the necessary
+            interfaces.
+            <br><br>
+            b) Origano's hard case provides good supporting for musicians to keep their trombones or go out
+            to perform.
+            <br><br>
+            The case is made of light foam wrapped by light wood splint has certain shock resistance and
+            water resistance.
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-
-  <script type="module" src="/main.js"></script>
+  <div class="bodyBlock4">
+    <div class="wHead">Working</div>
+    <div class="frame">
+      <div><iframe class="video" src="https://www.youtube.com/embed/taugRj3k2I8" frameborder="0"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          style="border-radius: 10px"></iframe></div>
+      <div class="frameText">
+        <div class="text1">
+          Learn how to play trombone with Joseph Rodriguez.He is a profesional trumbone artist who teaches it
+          in several universities. Check out the YouTube channel Smart Music for furthur lessons.
+          <br><br>
+          There are a lot of opinions, information and videos on the web about learning a musical instrument.
+          That’s because finding a great, instrumental teacher to guide, inspire and lead your child is one of
+          the most important aspects in helping them develop as a musician.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bodyBlock3" style="margin-top: -50px;">
+    <div class="fHead">Pricing</div>
+    <div class="feats">
+      <div class="temp">
+        <div class=" h1">Tenor Trombone</div>
+        <div style="font-size: x-large;
+                font-weight: bolder;
+                color: rgb(255, 238, 0);
+                background: rgba(56, 56, 56);
+                padding: 5px;
+                border-radius: 4px;">600💲</div>
+        <div>Lorem ipsum dolor sit amet</div>
+        <div>consectetur adipisicing elit.</div>
+        <div> Et consequuntur unde assumenda a</div>
+      </div>
+      <div class="temp">
+        <div class=" h1">Bass Trumbone</div>
+        <div style="font-size: x-large;
+                            font-weight: bolder;
+                            color: rgb(255, 238, 0);
+                            background: rgba(56, 56, 56);
+                            padding: 5px;
+                            border-radius: 4px;">900💲</div>
+        <div>Lorem ipsum dolor sit amet</div>
+        <div>consectetur adipisicing elit.</div>
+        <div> Et consequuntur unde assumenda a</div>
+      </div>
+      <div class="temp">
+        <div class=" h1">Valve Trumbone</div>
+        <div style="font-size: x-large;
+                            font-weight: bolder;
+                            color: rgb(255, 238, 0);
+                            background: rgba(56, 56, 56);
+                            padding: 5px;
+                            border-radius: 4px;">1200💲</div>
+        <div>Lorem ipsum dolor sit amet</div>
+        <div>consectetur adipisicing elit.</div>
+        <div> Et consequuntur unde assumenda a</div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro natus, provident consectetur illo labore
+    voluptate et quam aliquid dolores, est quae nulla. Rem suscipit esse quod possimus nemo eaque repellat!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos aspernatur quis necessitatibus expedita vel
+    deserunt porro, quos id culpa obcaecati suscipit, delectus quidem, asperiores provident dignissimos
+    consequuntur. Officia, minus accusamus.
+  </footer>
+  <script type="module" src="main.js"></script>
 </body>
 
 </html>
