@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
 
 *{
@@ -23,7 +23,7 @@ html{
     font-family: NoteThis;
     src: url("assets/Note_this.ttf") format("truetype");
   }
-  
+
 
 ::-webkit-scrollbar{
     width: 10px;
@@ -48,12 +48,28 @@ body{
     background-repeat: no-repeat;   
 }
 footer{
-    background-color: rgb(35, 35, 36);
-    color: white;
-    font-size: small;
-    padding: 100px;
-    margin-top: 100px;
+    background-color: #101024;
+    color: rgb(152, 152, 152);
+    font-family: 'Roboto';
+    font-weight: normal;
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 2rem;
 }
+
+footer section{
+    display: flex;
+    gap: 3rem;
+}
+
+footer img{
+    width: 3rem;
+}
+
+
 .body{
     display: flex;
     flex-direction: column;
@@ -64,7 +80,7 @@ footer{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     transition: all 0.5s ease 0s;
-    color: rgb(255, 217, 0);
+    color: #ffd900;
     font-family: Phage;
     position: fixed;
    display: flex;
@@ -76,17 +92,15 @@ footer{
 .navContents{
     display: flex;
     margin-right: 20px;
+    gap: 2rem;
 }
 .navItem{
     cursor: pointer;
-    padding: 3px;
+    padding: 0.5rem;
     text-decoration: none;
     color: rgb(255, 217, 0);
-    margin-left: 25px;
-    margin-right: 25px;
     font-size: 1.1rem;
 }
-
 .nl2{
     font-family: 'Carrois Gothic';
     font-size: 0.8rem;
@@ -97,6 +111,65 @@ footer{
     line-height: 0.7rem;
 }
 
+:root {
+    --clr-neon: rgb(255, 217, 0);
+    --clr-bg: hsl(323 21% 16%);
+  }
+
+.neon-button {
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border-radius: 0.25em;
+    position: relative;
+  }
+  
+  .neon-button::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--clr-neon);
+    top: 90%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.7;
+  }
+  
+  .neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--clr-neon);
+    border-radius: 0.25em;
+    z-index: -1;
+    transition: opacity 100ms linear;
+  }
+  
+  .neon-button:hover,
+  .neon-button:focus {
+    color: var(--clr-bg);
+    text-shadow: none;
+  }
+  
+  .neon-button:hover::before,
+  .neon-button:focus::before {
+    opacity: 1;
+  }
+  .neon-button:hover::after,
+  .neon-button:focus::after {
+    opacity: 1;
+  }
+  
 
 .navBrand img{
     border-radius: 7px;
