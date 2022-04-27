@@ -1,0 +1,90 @@
+
+
+let navbar = document.querySelector('.navbar');
+let navBrand = document.querySelector('.navBrand');
+let togDisp = document.querySelector('.togContents');
+let navCancel = document.querySelector('.navCancel');
+let navTog = document.querySelector('.navTog');
+let pro = document.querySelector('#product');
+let fea = document.querySelector('#feature');
+let work = document.querySelector('#working');
+let chair = document.querySelector('#chair');
+let cochair = document.querySelector('#cochair');
+let memb = document.querySelector('#memb');
+let chair_1 = document.querySelector('#chair_1');
+let cochair_1 = document.querySelector('#cochair_1');
+let memb_1 = document.querySelector('#memb_1');
+let chair1 = document.querySelector('#chair1');
+let chair2 = document.querySelector('#chair2');
+let chair3 = document.querySelector('#chair3');
+
+window.onscroll = function () {
+    if (window.scrollY == 0) {
+        navbar.classList.remove('navCol');
+    }
+    else {
+        navbar.classList.add('navCol');
+    }
+}
+
+navTog.addEventListener('click', function () {
+    togDisp.classList.remove('closeTog');
+    togDisp.classList.add('openTog');
+    navTog.classList.add('hidden');
+    navCancel.classList.add('appear');
+    navCancel.classList.remove('hidden');
+    togDisp.classList.remove('hidden');
+})
+navCancel.addEventListener('click', function () {
+    togDisp.classList.remove('openTog');
+    togDisp.classList.add('closeTog');
+    navTog.classList.add('appear');
+    navTog.classList.remove('hidden');
+    navCancel.classList.add('hidden');
+    togDisp.classList.add('hidden');
+})
+
+window.addEventListener('click', function (event) {
+    let box = document.querySelector('.togContents');
+    if (event.target != box && event.target != navCancel && event.target != navTog && event.target != togDisp) {
+        navTog.classList.remove('hidden');
+        navCancel.classList.add('hidden');
+        togDisp.classList.add('hidden');
+    }
+})
+
+chair.addEventListener('click', function () {
+    chair1.classList.remove('hidden');
+    chair2.classList.add('hidden');
+    chair3.classList.add('hidden');
+})
+
+cochair.addEventListener('click', function () {
+    chair2.classList.remove('hidden');
+    chair1.classList.add('hidden');
+    chair3.classList.add('hidden');
+})
+
+memb.addEventListener('click', function () {
+    chair3.classList.remove('hidden');
+    chair1.classList.add('hidden');
+    chair2.classList.add('hidden');
+})
+
+chair_1.addEventListener('click', function () {
+    chair1.classList.remove('hidden');
+    chair2.classList.add('hidden');
+    chair3.classList.add('hidden');
+})
+
+cochair_1.addEventListener('click', function () {
+    chair2.classList.remove('hidden');
+    chair1.classList.add('hidden');
+    chair3.classList.add('hidden');
+})
+
+memb_1.addEventListener('click', function () {
+    chair3.classList.remove('hidden');
+    chair1.classList.add('hidden');
+    chair2.classList.add('hidden');
+})

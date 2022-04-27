@@ -42,11 +42,95 @@ html{
     scroll-behavior: smooth;
   }
 
-body{
+.main{
     background: url("./assets/backG2.png");
     background-color: #1C1D3C;
     background-repeat: no-repeat;   
+    background-size: contain;
 }
+
+.ob{
+    margin-bottom: 10em;
+}
+
+.team{
+    background-color: #1C1D3C;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navT{
+    display: flex;
+    gap: 1rem;
+}
+
+.navTeam{
+    padding: 1rem;
+    background:none;
+    color: #ffd900;
+    border: #ffd900 0.2rem solid;
+    font-family: Phage;
+    font-size: 1rem;
+    width: 10rem;
+    border-radius: 1rem;
+    transition: 0.5s ease-in 0s;
+}
+
+.navTeam:hover{
+    background-color: #ffd900;
+    color: #1C1D3C;
+}
+
+.team h1{
+    font-family: Phage;
+    color: #ffd900;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 8rem;
+}
+
+.team h2{
+    font-family: Phage;
+    color: #ffd900;
+    font-weight: normal;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.chairs{
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Hchair{
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(20em, 1fr) );
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-row-gap: 5em;
+    justify-items: center;
+}
+
+.Schair{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat( auto-fill, minmax(20em, 1fr) );
+    grid-row-gap: 5em;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
 footer{
     background-color: #101024;
     color: rgb(152, 152, 152);
@@ -244,7 +328,7 @@ footer img{
 }
 .fHead::after{
     content: 'Annually conducted fests of SME on every odd and even semester';
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: NoteThis;
     padding: 20px;
     color:rgb(149, 149, 149);
@@ -272,8 +356,49 @@ footer img{
 .ftext{
     font-family: NoteThis;
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
     text-align: justify;
 }
+
+.ftext span{
+    color: white;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 251, 0),
+      0 0 82px rgb(250, 251, 0),
+      0 0 92px rgb(245, 251, 0),
+      0 0 102px rgb(240, 251, 0),
+      0 0 151px rgb(235, 251, 0);
+    font-size: 2rem;
+    animation: 0.8s ease-in infinite;
+    animation-name: blink;
+    animation-direction: alternate-reverse;
+}
+
+.secbutton{
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ffd900;
+    font-size: 1.5rem;
+    width: 100%;
+    background: none;
+    border: none;
+    font-family: Phage;
+    border-radius: 0.3rem;
+    transition: 0.5s ease-in 0s;
+}
+
+.secbutton:hover{
+    background-color: #ffd900;
+    color: #181936;
+}
+
 
 .proImg{
     margin: 30px;
@@ -328,7 +453,7 @@ footer img{
 }
 .togContents{
     z-index: 1;
-    padding-top: 1rem;
+    padding-top:1em;
     position: fixed;
     display:flex;
     flex-direction: column;
@@ -382,13 +507,66 @@ footer img{
 }
 .wHead::after{
     content: "Know about the team of brighter minds came together to make this possible";
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: NoteThis;
     padding: 20px;
     color:rgb(149, 149, 149);
 }
+
+.bodyBlock5{
+    display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+  flex-direction: column;
+}
+
+.bodyBlock5 .wHead::after{
+    content: "Proudly developed by CEGians";
+    font-size: 1.5rem;
+}
+
+.devs{
+    display: flex;
+    gap: 5rem;
+}
+
+.dev{
+    display: flex;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: #181936;
+    box-shadow: 9px 9px 17px 0px rgba(255,217,0,0.75);
+    width: 14.4rem;
+}
+
+.dev img{
+    border-radius: 1rem;
+}
+
+.dev span{
+    color: #ffd900;
+    font-size: 1.8rem;
+    font-family: NoteThis;
+}
+
+.devSoc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.devSoc img{
+    width: 2.3rem;
+    border-radius: 0;
+}
+
 .frame{
-  margin: 160px;
+  margin: 5rem;
   margin-top: 0px;
   padding: 20px;
   grid-gap:10px;
@@ -405,8 +583,6 @@ footer img{
     cursor: pointer;
 }
 
-
-  
   .content {
     position: relative;
     width: 100%;
@@ -419,7 +595,7 @@ footer img{
   }
   
   .content .content-overlay {
-    background-color:rgba(0, 1, 46, 0.521);
+    background-color:rgba(0, 1, 35, 0.648);
     border-radius: 1rem;
     position: absolute;
     cursor: pointer;
@@ -504,6 +680,9 @@ footer img{
     .frame{
         flex-direction: column;
       }
+    .dev{
+        width: 12rem;
+    }
     .temp{
         width: 80%;
     }
@@ -524,11 +703,17 @@ footer img{
      }
 }
 @media (max-width: 800px) {
-    body{
+    .main{
         background: url(/assets/mob.png);
         background-size: 24em;
         background-repeat:repeat-x;
         background-color: #1C1D3C;
+    }
+    .Hchair{
+        grid-auto-flow: row;
+    }
+    .dev{
+        width: 18rem;
     }
     .navCancel{
         display:block;
@@ -580,6 +765,9 @@ footer img{
        width: 300px;
        height: 220px;
     }
+    .devs{
+        flex-direction: column;
+    }
 }
 .hidden{
     display: none;
@@ -588,6 +776,15 @@ footer img{
     animation-name: app;
     animation-duration: 0.5s;
     opacity: 1;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 @keyframes openNav { 
